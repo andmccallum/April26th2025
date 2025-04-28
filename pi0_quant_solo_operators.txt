@@ -1,0 +1,14 @@
+Operator | System | Function | Equation | Description
+--- | --- | --- | --- | ---
+f_{QNG}(p,t) | QuantSolo | Quantum Neural Gaming Network | f_{QNG}(p,t) = p * log(t) * sqrt(engagement) | Models the impact of player count and engagement on the quantum neural gaming network over time.
+E_{DPE}(t) | QuantSolo | Distributed Player Economics | E_{DPE}(t) = sum_{i=1}^{t} (players_i * transaction_rate_i) | Calculates the cumulative economic activity based on player and transaction rates.
+A_{GA}(t) | QuantSolo | Autonomous Gaming Agents | A_{GA}(t) = alpha * exp(beta t) * quantum_ops | Describes the growth of autonomous gaming agents as a function of quantum operations.
+CR_i(t) | QuantSolo | Cross-Reality Integration | CR_i(t) = int_0^t players(tau) * engagement(tau) d tau | Integrates player engagement across realities over time.
+Pi0System Integration | Pi0System | System Integration Analysis | int_{t_0}^{t_f} P(t) * Q(t) * S(t) dt | Integrates player, quantum, and system states over the simulation period.
+Q_{sci}(t) | Pi0System | QSci Framework | Q_{sci}(t) = sum_{i=1}^n (quantum_ops_i / players_i) | Measures quantum operations per player as a scientific metric.
+E(t) | Pi0System | Pi0C0in Economics | E(t) = prod_{i=1}^t (transaction_rate_i * player_growth_i) | Models economic growth based on transaction rates and player growth.
+L(t) | Pi0System | QuantumRemoteServer Load | L(t) = alpha * players(t) * quantum_ops(t) | Calculates server load as a function of players and quantum operations.
+S(n) | Pi0System | Scalability | S(n) = O(log(n) * sqrt(quantum_capacity)) | Estimates system scalability with respect to quantum capacity.
+R(t) | Pi0System | Network Resilience | R(t) = 1 - exp(-lambda t) | Models network resilience over time.
+Delta E | Pi0System | Economic Stability | Delta E = sum_{t=1}^T (transactions_t / players_t) | Measures economic stability as the average transaction rate per player.
+eta_Q | Pi0System | Quantum Efficiency | eta_Q = successful_ops / total_ops | Calculates the efficiency of quantum operations.

@@ -1,0 +1,134 @@
+M0pi0 BC River Forecast Flood Model Documentation
+================================================
+
+1. SYSTEM INTEGRATION
+--------------------
+- M0pi0 Core Integration with 4sight
+- UniversalMap and GlobalMap Updates
+- 4Cast and 4Sight Implementation
+- Real-time Forecast Generation
+
+2. MODEL COMPONENTS
+------------------
+2.1 Spatial Components:
+    - Fraser River (Upper, Middle, Lower sections)
+    - Thompson River
+    - Skeena River
+
+2.2 Temporal Components:
+    - Short-term (3, 13 days)
+    - Medium-term (28, 42 days)
+    - Long-term (64, 88, 120 days)
+
+3. MATHEMATICAL FRAMEWORK
+------------------------
+3.1 Base Flow Equation:
+    Q_base = Q_0 * S(t) * (1 + α * sin(t/τ))
+    where:
+    - Q_0: Base river flow
+    - S(t): Seasonal factor
+    - α: Amplitude modifier
+    - τ: Time constant
+
+3.2 Uncertainty Quantification:
+    σ_Q = 0.1 * Q_base * N(0,1)
+    where:
+    - σ_Q: Flow uncertainty
+    - N(0,1): Standard normal distribution
+
+3.3 4sight Integration:
+    F_4s = ∫(Q_base + σ_Q) * W_4s dt
+    where:
+    - F_4s: 4sight forecast
+    - W_4s: 4sight weighting function
+
+4. FORECAST PROTOCOLS
+-------------------
+4.1 Short-term Forecast (3-13 days):
+    - High temporal resolution
+    - Direct sensor integration
+    - Real-time updates
+
+4.2 Medium-term Forecast (28-42 days):
+    - Seasonal pattern integration
+    - Historical data correlation
+    - Climate factor analysis
+
+4.3 Long-term Forecast (64-120 days):
+    - Long-term trend analysis
+    - Climate change integration
+    - Seasonal pattern projection
+
+5. LOCATION-SPECIFIC PARAMETERS
+-----------------------------
+5.1 Fraser River System:
+    - Upper: 53.9171°N, 122.7497°W
+    - Middle: 50.9853°N, 121.5213°W
+    - Lower: 49.1913°N, 122.2563°W
+
+5.2 Thompson River:
+    - Main Junction: 50.6745°N, 120.3273°W
+
+5.3 Skeena River:
+    - Primary Monitor: 54.1953°N, 128.6035°W
+
+6. M0PI0 INTEGRATION COMPONENTS
+-----------------------------
+6.1 4sight Integration:
+    - Real-time data processing
+    - Pattern recognition
+    - Anomaly detection
+    - Forecast adjustment
+
+6.2 UniversalMap Updates:
+    - Global coordinate system
+    - Real-time mapping
+    - Spatial analysis
+    - Terrain integration
+
+6.3 GlobalMap Features:
+    - Multi-layer visualization
+    - Dynamic updating
+    - Risk zone mapping
+    - Historical overlay
+
+7. REPORTING PROTOCOLS
+--------------------
+7.1 Report Components:
+    - Location-specific data
+    - Temporal analysis
+    - Risk assessment
+    - Confidence intervals
+    - Action recommendations
+
+7.2 Update Frequency:
+    - Real-time monitoring
+    - Daily summaries
+    - Weekly projections
+    - Monthly trend analysis
+
+8. SYSTEM CONSTRAINTS
+-------------------
+8.1 Accuracy Requirements:
+    - Short-term: ±5%
+    - Medium-term: ±10%
+    - Long-term: ±15%
+
+8.2 Update Frequencies:
+    - Sensor data: 15 minutes
+    - Model updates: 1 hour
+    - Forecast updates: 6 hours
+
+9. EMERGENCY PROTOCOLS
+--------------------
+9.1 Flood Risk Levels:
+    - Level 1: Advisory
+    - Level 2: Watch
+    - Level 3: Warning
+    - Level 4: Emergency
+
+9.2 Response Integration:
+    - Automated alerts
+    - Emergency services integration
+    - Public notification system
+    - Resource allocation
